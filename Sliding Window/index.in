@@ -1,0 +1,4 @@
+Two types of sliding window problem:
+
+1. fix window size
+2. variable window size with some condition.
