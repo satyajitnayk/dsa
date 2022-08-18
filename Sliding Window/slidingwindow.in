@@ -1,0 +1,21 @@
+Two types of sliding window problem:
+
+1. fix window size
+2. variable window size with some condition.
+
+## General format for Variable size window:
+while(j<n) {
+  Calculation
+  if(value < K) j++;
+  else if(value == K) {
+    ans = Calculation;
+    j++l
+  } else if(value > K) {
+    while(value > K) {
+      Remove Calculation for i;
+      i++;
+    }
+    j++;
+  }
+}
+return ans;
