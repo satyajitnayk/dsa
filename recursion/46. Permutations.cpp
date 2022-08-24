@@ -3,6 +3,14 @@ You can return the answer in any order.
 
 Approach 1:
 
+1. Subtask : Bring every remaining element to position pos.
+2. Ask recursion to do remaining task.
+
+_         _         _         => 1,2,3 
+3 choices 2 choices 1 choice
+
+=> Time complexity O(n*n!)
+=> Space complexity O(n)
 ## CODE:
 
 void solve(string s, int pos, vector<string> &ans) {
@@ -24,3 +32,5 @@ vector<string> permute(string &s) {
   solve(s,0,ans);
   return ans;
 }
+
+Approach 2:
