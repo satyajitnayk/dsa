@@ -1,11 +1,4 @@
-Given two strings s and t, return the number of distinct subsequences of s which equals t.
-A string's subsequence is a new string formed from the original string by deleting some (can be none) of 
-the characters without disturbing the remaining characters' relative positions. 
-(i.e., "ACE" is a subsequence of "ABCDE" while "AEC" is not).
-The test cases are generated so that the answer fits on a 32-bit signed integer.
-
-
-**For any no of ways problem we follow recursion pattern;
+Approach:**For any number of ways problem we follow recursion pattern;
 f() {
   BASE CASE
 
@@ -23,17 +16,18 @@ f() {
 
 int solve(int i,int j) {
   //BC
+  // Maintain ORDER OF CHECKING j -> i
+    // All chars of t matches
+  if(j < 0) return 1;
   // s is exhausted but t is not => return 0
   if(i < 0) return 0;
-  // All chars of t matches
-  if(j < 0) return 1;
 
   if(s[i] == t[j]) {
     // 2 ways either compare or skip
-    return solve(i+1,j+1) + solve(i+1,j);
+    return solve(i-1,j-1) + solve(i-1,j);
   } else{
     // 1 way skip
-    return solve(i+1,j);
+    return solve(i-1,j);
   }
 }
 => Time complexity = O(2^mn) => exponential
