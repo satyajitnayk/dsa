@@ -4,7 +4,9 @@
     a. All level except las are filled.
     b. The last level has all nodes in left.
   3. Perfect BT: All leaf nodes at same level.
-  4. Balanced BT: Height of tree at max log N. (N = #of nodes)
+  4. Balanced BT: 
+    a. Height of tree at max log N. (N = #of nodes)
+    b. For every node Height(left) - Height(ritgh) <= 1
   5. Degenerate BT: Left Or Right Skewed
       a 
         \
