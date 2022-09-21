@@ -5,7 +5,7 @@ f(i,j) => Longest Common substring b/w substring s1[0...i] & s2[0...j]
 int f(int i,int j,string &s1,string &s2,int count) {
     if(i<0 || j<0) return count;  
     if(s1[i] == s2[j]) {
-        count= 1 + f(i-1,j-1,s1,s2,count+1);
+        count = f(i-1,j-1,s1,s2,count+1);
     }
     count = max(count,max(f(i-1,j,s1,s2,0),f(i,j-1,s1,s2,0)));
     return count;
