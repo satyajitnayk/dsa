@@ -3,6 +3,7 @@ Approach:
 
 #CODE:
 
+
 class Solution {
     public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
         int indegree[] = new int[V];
