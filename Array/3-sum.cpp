@@ -18,13 +18,13 @@ Approach 1:
 ->Run 3 loops 
 -> check sum, if sum==0, store 3 numbers in sorted order in a set
 Time O(n^3 log m)
-Space )(m) => m - size of set
+Space O(m) => m - size of set
 
 Approach 2:
 -> Run for loop and store count of number in a map
 -> run 2 foor loop
 -> whene ever iterate over the two numbers remove them from map 
-->find the third number in the map & store it in sorted order in a map
+-> find the third number in the map & store it in sorted order in a map
 -> add the 2 numbers back to map
 Time O(n^2 log m)
 Space O(m)  m - size of set

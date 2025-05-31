@@ -1,7 +1,7 @@
 #Types Of BT?
   1. Full BT: Every node has 0 or 2 children.
   2. Complete BT: 
-    a. All level except las are filled.
+    a. All level except last are filled.
     b. The last level has all nodes in left.
   3. Perfect BT: All leaf nodes at same level.
   4. Balanced BT: 
